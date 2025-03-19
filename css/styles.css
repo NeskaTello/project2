@@ -1,0 +1,373 @@
+/*  
+Author: Veroneska Tello 
+File Name: styles.css
+*/
+
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1,
+h3,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rules for body and images */
+
+body {
+  background-color: #f6eee4;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+/* Style rules to show mobile class and hide tab-desk class */
+.mobile,
+.mobile-tablet {
+  display: block;
+}
+
+.tab-desk,
+.desktop {
+  display: none;
+}
+
+/*Style rules for header area*/
+.mobile h1,
+.mobile h3 {
+  padding: 2%;
+  text-align: center;
+}
+
+.mobile h1 {
+  font-family: "Emblema One", serif;
+  font-weight: 400;
+}
+
+.mobile h3,
+main {
+  font-family: "Lora", serif;
+  font-weight: 400;
+}
+
+/* Style rules for navigation area */
+
+nav {
+  background-color: #2a1f14;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 1.5em;
+  font-family: Geneva, Arial, sans-serif;
+  font-weight: bold;
+}
+
+nav li a {
+  display: block;
+  color: #f6eee4;
+  padding: 0.5em 2em;
+  text-decoration: none;
+}
+
+.mobile-nav a {
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  text-decoration: none;
+  padding: 3%;
+  display: block;
+}
+
+.mobile-nav a.nav-icon {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #f6eee4;
+  padding: 2%;
+}
+
+.nav-icon div {
+  height: 40px;
+  width: 40px;
+  color: #2a1f14;
+}
+
+main {
+  padding: 2%;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+main p {
+  font-size: 1.25em;
+}
+
+main h3 {
+  padding-top: 2%;
+}
+
+main ul {
+  list-style-type: square;
+}
+
+.link {
+  color: #4d3319;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.action {
+  font-size: 1.75em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.round {
+  border-radius: 6px;
+}
+
+#info ul {
+  margin: 10%;
+}
+
+.contact {
+  text-align: center;
+}
+
+.tel-link {
+  text-align: center;
+  background-color: #2a1f14;
+  padding: 2%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.tel-link a {
+  color: #f6eee4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact,
+#form h2 {
+  text-align: center;
+}
+
+/* Style rules for footer content */
+
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  background-color: #2a1f14;
+  color: #f6eee4;
+  padding: 1% 0%;
+}
+
+footer a {
+  color: #f3e6d8;
+  text-decoration: none;
+}
+
+/* Style rules for form elements */
+fieldset,
+input,
+textarea {
+  margin-bottom: 2%;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+label {
+  display: block;
+  padding-top: 2%;
+}
+
+form #submit {
+  margin: 0 auto;
+  display: block;
+  padding: 2%;
+  background-color: #78593a;
+  color: #f6eee4;
+  font-size: 1.25em;
+  border-radius: 10px;
+}
+
+/* Media query for mobile viewport */
+@media (max-width: 480px) {
+  .mobile,
+  .mobile-tablet {
+    display: block;
+  }
+
+  .mobile h1 {
+    margin: 2% 0 0 3%;
+  }
+
+  .tab-desk,
+  .desktop,
+  #nav-links {
+    display: none;
+  }
+
+  nav li {
+    display: block;
+    border-top: 0.5px solid #f6eee4;
+    font-size: 1.5em;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+  }
+
+  form {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+/* Media query for tablet viewport */
+@media (min-width: 481px) {
+  .mobile,
+  .mobile-nav {
+    display: none;
+  }
+
+  .tab-desk,
+  .desktop {
+    display: block;
+  }
+
+  /* Style rules for table */
+  table {
+    border: 1px solid #2a1f14;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+
+  caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1%;
+  }
+
+  th,
+  td {
+    border: 1px solid #2a1f14;
+    padding: 1%;
+  }
+
+  th {
+    background-color: #2a1f14;
+    color: #fff;
+    font-size: 1.15em;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #deccba;
+  }
+
+  /* Style rules for form elements */
+  form {
+    width: auto;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+
+  .btn {
+    grid-column: 1 / span 2;
+  }
+}
+
+/* Media query for desktop viewport */
+@media (min-width: 769px) {
+  .mobile,
+  .mobile-tablet {
+    display: none;
+  }
+
+  .tab-desk,
+  .desktop {
+    display: block;
+  }
+
+  /* Style rules for table */
+  table {
+    border: 1px solid #2a1f14;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+
+  caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1%;
+  }
+
+  th,
+  td {
+    border: 1px solid #2a1f14;
+    padding: 1%;
+  }
+
+  th {
+    background-color: #2a1f14;
+    color: #fff;
+    font-size: 1.15em;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #deccba;
+  }
+
+  /* Style rules for form elements */
+  form {
+    width: auto;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+
+  .btn {
+    grid-column: 1 / span 2;
+  }
+}
+
+#questions p {
+  cursor: pointer;
+}
+
+#answer {
+  text-align: center;
+  font-weight: bold;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#answer h2 {
+  display: none;
+}
